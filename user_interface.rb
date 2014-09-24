@@ -50,9 +50,7 @@ def main_menu_for_lists
   else
     puts "Sorry, that wasn't a valid option."
   end
-
 end
-
 
 def main_menu_for_tasks
   loop do

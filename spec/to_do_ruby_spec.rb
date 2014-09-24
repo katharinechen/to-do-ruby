@@ -44,23 +44,6 @@ describe :List do
     newList.sort_priority
     expect(newList.task_list).to eq([newTask2, newTask1, newTask3])
   end
-
-  # it 'should sort date by priority' do
-
-  #   newList = List.new("Awesome Things")
-  #   newTask1 = Task.new("eating")
-  #   newTask1.set_date("8/26/14")
-  #   newList.add_task(newTask1)
-  #   newTask2 = Task.new("sleeping")
-  #   newTask2.set_date("8/27/14")
-  #   newList.add_task(newTask2)
-  #   newTask3 = Task.new("homework")
-  #   newTask3.set_date("8/13/14")
-  #   newList.add_task(newTask3)
-  #   newList.sort_date
-  #   expect(newList.task_list).to eq([newTask3, newTask1, newTask2])
-  # end
-
 end
 
 describe :Task do
@@ -93,13 +76,4 @@ describe :Task do
     new_task.set_date("8/26/14")
     expect(new_task.date).to eq("8/26/14")
   end
-
 end
-
-
-# If you get this far, add due dates and priority (on a scale of 1-5) for tasks.
-# Add the ability to sort tasks by name, due date, or priority. This logic should go in the model, not the user interface.
-# Let users see a list of all the tasks they have marked "done".
-# Give users the option to edit a task's description.
-# Finally, add the ability to delete tasks.
-# Finished? Rewrite your user interface using shoes.rb.
